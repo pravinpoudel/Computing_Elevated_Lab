@@ -25,6 +25,6 @@ fn vs_mainT(@builtin(vertex_index) vertexIndex: u32, vertices:Vertex )-> VertexO
 const F_S_triangle = `
 @stage(fragment)
 fn fs_mainT(@location(0) uv_position:vec2<f32>, @location(1) color: vec4<f32>)-> @location(0) vec4<f32>{
-    return vec4<f32>(1.0, 1.0, 1.0, 1.0);
+    return vec4<f32>(0.0, 0.0, 0.0, 1.0);
 }
 `;

@@ -68,7 +68,7 @@
         },
 
         primitive: { topology:"line-strip"},
-        depthStensil: {
+        depthStencil: {
             format: "depth24plus-stencil8",
             depthWriteEnabled: true,
             depthCompare: "less" 
@@ -101,7 +101,7 @@
             view: null,
             clearValue: [1.0, 1.0, 1.0, 1.0],
             loadOp: 'clear',
-            storeOp: 'discard'
+            storeOp: 'store'
         }],
         depthStencilAttachment: {
             view: depthTexture.createView(),
