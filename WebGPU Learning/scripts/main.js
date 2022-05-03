@@ -49,8 +49,6 @@ let options = {
     saveScreenshot(buffer.getMappedRange());
     buffer.unmap();
 
-
 }());
-
 
 //GPU Buffer or GPU Texture
